@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Node.js Chat Service</title>
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="default.css" rel="stylesheet" />
+	<script src="socket.io.js"></script>
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="default.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<h3>Online Chat Application <sub>With node.js<sub></h3>
+				 </div>
+				 <div class="col-md-6 col-sm-6 hidden-xs">
+					<h5>Md. Mahmudur Rahman</h5>
+					<h5>ID: 1249477</h5>
+				 </div>
+			 </div>
+		 </div>
+	</header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-sm-8">
+                <div id="msg">
+
+                </div>
+                <div class="input-group" id="userInputFrom">
+                    <input type="text" id="userInput" class="form-control"/>
+					<input type="file" id="upload" class="form-control hidden"/>
+                    <div class="input-group-btn">
+                        <button class="btn btn-primary" id="sendData" type="button">Send</button>
+						<button class="btn btn-primary" id="uploadFile" type="button">Send Picture</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4 hidden-xs">
+                <div id="users">
+                    <h3>Active Users</h3>
+					<hr/>
+                    <div id="userList">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<footer>
+		<h5>Copyright&copy2019</h5>
+	</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
