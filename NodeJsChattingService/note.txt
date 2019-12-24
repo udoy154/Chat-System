@@ -1,0 +1,4 @@
+open the powershell on the project folder derectory
+
+#Add nodeModule folder(npm i)
+#install bootstrap on public folder
